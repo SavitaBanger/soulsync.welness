@@ -1,0 +1,547 @@
+.bg-blue {
+    background-color: #224b7a
+}
+
+.light-bluebg {
+    background-color: #cbe0f2
+}
+
+.bg-grey {
+    background-color: #ebedf0
+}
+
+.text-blue {
+    color: #224b7a
+}
+
+.fs-18 {
+    font-size: 18px
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/Poppins-Light.ttf) format('truetype');
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/Poppins-ExtraBold.ttf) format('truetype');
+    font-weight: 800
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(webfonts/poppins-SemiBold.ttf) format('truetype');
+    font-weight: 600
+}
+
+input[type=checkbox]:before,
+input[type=checkbox]:checked:before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    font-size: 10px
+}
+
+input[type=checkbox]:checked:before {
+    content: '\2713'
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    height: 12px;
+    min-width: 12px;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 2px
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+    border-radius: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins
+}
+
+li,
+p,
+ul {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    font-size: 14px
+}
+
+li,
+ul {
+    padding: 0;
+    list-style: none
+}
+
+p b,
+p strong {
+    font-weight: 700
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0
+}
+
+h2 {
+    font-weight: 800;
+    font-style: normal
+}
+
+button {
+    border: 0;
+    cursor: pointer
+}
+
+.container {
+    width: 100%
+}
+
+section {
+    display: flex;
+    padding: 3rem 1.5rem
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem
+}
+
+.heading h2 {
+    font-size: 22px;
+    width: 100%
+}
+
+.heading p {
+    margin-top: 1rem
+}
+
+.center-heading {
+    justify-content: center;
+    align-items: center
+}
+
+.center-heading span {
+    margin: .5rem auto 0
+}
+
+.center-heading h2,
+.center-heading p {
+    text-align: center
+}
+
+.white-heading h2,
+.white-heading p {
+    color: #fff
+}
+
+.white-heading span {
+    background-color: #fff
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1.5rem
+}
+
+.buttons .btn-blue,
+.buttons .btn-white {
+    display: flex;
+    justify-content: center;
+    transition: 1s all;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 1;
+    padding: 10px 20px;
+    min-width: 100px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px
+}
+
+.buttons .btn-blue img,
+.buttons .btn-white img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px
+}
+
+.buttons .btn-blue {
+    background-color: #224b7a;
+    transition: .3s ease-out;
+    color: #fff
+}
+
+.buttons .btn-blue:hover::before {
+    height: 100%
+}
+
+.buttons .btn-blue::before {
+    content: '';
+    background-color: #4c7699;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    border-radius: 30px;
+    z-index: -1;
+    transition: .5s all
+}
+
+.buttons .btn-white {
+    background-color: #fff;
+    color: #224b7a;
+    border: 1px solid #224b7a
+}
+
+.main-header {
+    background-color: #fff
+}
+
+.main-header .custom-dropdown .dropdown-item {
+    text-transform: none
+}
+
+.main-header .custom-dropdown {
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: #fff
+}
+
+.main-header .custom-dropdown .dropdown-item {
+    transition: all .2s ease-in-out;
+    font-size: 14px;
+    color: #333
+}
+
+.main-header .custom-dropdown .dropdown-item:hover {
+    background-color: #cbe0f2;
+    color: #224b7a;
+    font-weight: 500
+}
+
+@media (min-width :768px) {
+    section {
+        padding: 3rem 2rem
+    }
+}
+
+@media (min-width :1024px) {
+
+    li,
+    p {
+        line-height: 1.8
+    }
+
+    .heading h2 {
+        font-size: 28px
+    }
+
+    .buttons .btn-green,
+    .buttons .btn-pink {
+        font-size: 16px
+    }
+}
+
+@media (min-width :1366px) {
+    section {
+        padding: 4rem 0
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto
+    }
+}
+
+.home .banner {
+    background-image: linear-gradient(to right, #334d6c, #d0dfec)
+}
+
+.home .about .about-item span {
+    height: 180px;
+    width: 180px
+}
+
+.home .overview .content ul li {
+    position: relative
+}
+
+.home .overview .content ul li::before {
+    content: '';
+    background-image: url(../img/home/blue-check.svg);
+    background-size: 100% 100%;
+    min-width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -25px;
+    top: 5px
+}
+
+.home .work .work-item span {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%
+}
+
+.home .work .work-item span img {
+    height: 25px;
+    width: 25px
+}
+
+@media (min-width :768px) {
+    .home .banner h1 {
+        font-size: 28px
+    }
+
+    .home .work .icon-circle {
+        margin: 0 auto 1rem auto
+    }
+
+    .home .work section h5,
+    .home .work section p {
+        text-align: center
+    }
+
+    .home .work .row>div {
+        align-items: center !important
+    }
+}
+
+@media (min-width :1024px) {
+    .home .banner h1 {
+        font-size: 33px
+    }
+}
+
+@media (min-width :1366px) {
+    .home .banner h1 {
+        font-size: 40px
+    }
+}
+
+.contact .banner {
+    background-image: linear-gradient(90deg, #e3f2fd 0, #224b7a 100%)
+}
+
+.contact .query .form-control {
+    font-size: 14px;
+    padding: .375rem .75rem
+}
+
+.contact .query .form-label {
+    font-weight: 600
+}
+
+.contact .query .support-card {
+    color: #fff;
+    border-radius: 1.5rem
+}
+
+.contact .query .support-option {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: .75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.contact .query .support-option i {
+    font-size: 1.5rem
+}
+
+@media (min-width :1024px) {
+    .contact .query .query-container {
+        position: relative
+    }
+
+    .contact .query .support {
+        width: 32%;
+        position: absolute;
+        top: 54%;
+        right: 2%;
+        bottom: 0;
+        margin: auto
+    }
+
+    .contact .query .contact-form {
+        width: 80%
+    }
+}
+
+@media (min-width :1366px) {
+    .contact .banner .banner-container {
+        width: 800px;
+        height: 150px;
+        margin: 0 auto
+    }
+
+    .contact .banner .banner-container::after {
+        content: '';
+        background-image: url(../img/contact/doctor.png);
+        background-size: 100% 100%;
+        height: 250px;
+        width: 380px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        bottom: 0;
+        margin: auto
+    }
+
+    .contact .banner .banner-container h1 {
+        font-size: 38px
+    }
+
+    .contact .query .contact-form h2 {
+        font-size: 28px
+    }
+
+    .contact .query .support {
+        width: 25%;
+        top: 73%;
+        right: 9%
+    }
+}
+
+@media (min-width :1500px) {
+    .contact .query .query-container {
+        width: 80%;
+        margin-left: 2rem
+    }
+
+    .contact .query .support {
+        top: 60%
+    }
+}
+
+.about .banner {
+    background-image: linear-gradient(90deg, #e3f2fd 0, #224b7a 100%)
+}
+
+.about .rounded-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover
+}
+
+.about .service-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+    transition: .3s ease;
+    height: 100%
+}
+
+.about .service-card span {
+    height: 40px;
+    width: 40px
+}
+
+.about .service-card span img {
+    height: 30px;
+    width: 30px
+}
+
+.about .service-card:hover {
+    background-color: #fff !important
+}
+
+.about .service-card:hover span {
+    background-color: #224b7a !important
+}
+
+.about .service-card:hover span img {
+    filter: brightness(100%) invert(1)
+}
+
+.about .service-card:hover h5,
+.about .service-card:hover p {
+    color: #224b7a !important
+}
+
+.service .video-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px
+}
