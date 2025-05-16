@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
           <!-- Nav Links -->
           <ul class="navbar-nav mx-auto text-uppercase fw-light small">
-            <li class="nav-item"><a class="nav-link text-blue" href="home.php">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-blue" href="index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link text-blue" href="about.php">About</a></li>
             <!-- <li class="nav-item"><a class="nav-link text-blue" href="#">Services</a></li> -->
             <li class="nav-item dropdown">
